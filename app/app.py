@@ -3,7 +3,7 @@ from flask import Flask, jsonify, request, session
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
+CORS(app)  # Enable CORS for all routes mentioned
 app.secret_key = 'super_secret_key'  # Secret key for session management
 
 # In-memory database to store items
